@@ -14,7 +14,7 @@ const CardTours =  (props)=> {
   
     }
   return (
-    <div className="col-xl-3 col-lg-4 col-md-6 col-12 p-2 my-2">
+    <div className="col-lg-4 col-md-6 col-12 p-2 my-2">
         <Card  dir='rtl'  style={{height:"100%"}} className="shadow">
         <Carousel fade>
         <Carousel.Item>
