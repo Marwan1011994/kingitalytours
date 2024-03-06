@@ -53,14 +53,14 @@ export default function InfoTours() {
             </div>
             <div className='mt-4 text-center shadow py-4 rounded-3'>
                 <h6>للتواصل معانا عبر الوتساب</h6>
-                <h5 onClick={()=>{window.open("mailto:info@kingityalytours.com","_blank")}} className='toclick my-4' dir='ltr'><i className="fa-brands fa-square-whatsapp fa-2xl mx-2 text-success"></i> +393248708348</h5>
+                <h5 onClick={()=>{window.open('https://wa.me/393248708348?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%83%0A%D9%84%D8%A7%20%D8%AA%D8%AA%D8%B1%D8%AF%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%86%D8%A7%20%D9%84%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B2%D9%8A%D8%AF%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%AD%D9%88%D9%84%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%86%D8%A7%20%D8%A3%D9%88%20%D9%84%D8%AD%D8%AC%D8%B2%20%D8%B1%D8%AD%D9%84%D8%AA%D9%83%20%D8%A8%D8%B1%D9%81%D9%82%D8%A9%20%D8%B3%D8%A7%D8%A6%D9%82%20%D8%B9%D8%B1%D8%A8%D9%8A%20%D9%81%D9%8A%20%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7!','_blank')}} className='toclick my-4' dir='ltr'><i className="fa-brands fa-square-whatsapp fa-2xl mx-2 text-success"></i> +393248708348</h5>
                 <div>
                     <img src={download} alt='QR CODE' style={{width:"150px",height:"150px"}}/>
                 </div>
             </div>
             <div className='mt-4 text-center shadow py-4 rounded-3'>
                 <h6>للتواصل معانا عبر الهاتف</h6>
-                <h5 onClick={()=>{window.open("mailto:info@kingityalytours.com","_blank")}} className='toclick my-4' dir='ltr'><i className="fa-solid fa-square-phone fa-2xl text-primary"></i> +393248708348</h5>
+                <h5 onClick = {() => {window.open('tel:+393248708348', '_blank')}} className='toclick my-4' dir='ltr'><i className="fa-solid fa-square-phone fa-2xl text-primary"></i> +393248708348</h5>
             </div>
         </div>
     </div>
