@@ -1,0 +1,25 @@
+/* Style Footer Section */
+
+
+.parentF{
+    min-height: 300px;
+    padding-top: 40px;
+}
+.parentF > div:not(div:last-child){
+    border-right: 2px solid #00f;
+}
+
+.link h5 , .link i{
+    cursor: pointer;
+}
+.link h5:hover , .link i:hover{
+    opacity: 0.8;
+}
+.link h5 span{
+    color: #894204;
+    font-size: 24px;
+    font-weight: bold;
+}
+.copyRight{
+    border-top: 2px solid #00f;
+}

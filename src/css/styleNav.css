@@ -1,0 +1,41 @@
+.topNav{
+    background-color: #ffffff95;
+    color: #1B1A55;
+    min-height: 40px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topNav div h5 , .topNav div i {
+    cursor: pointer;
+}
+.topNav div h5:hover , .topNav div i:hover {
+    opacity: 0.7;
+}
+.topNav div h5 span{
+    color: #894204;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media (max-width: 576px){
+   .topNav{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   } 
+}
+/* ////////////////////////////////////////////////////// */
+
+.carousel-item div:first-child{
+    opacity: 0.2;
+}
+
+
+.carousel-caption{
+    background-color: #33333390;
+    border-radius: 20px;
+}
+.carousel-caption h3{
+    margin-bottom: 15px;
+}

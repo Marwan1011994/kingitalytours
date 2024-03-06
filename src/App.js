@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Route,Routes} from "react-router-dom"
+import NotFound from './Component/NotFound'
+import NavBar from "./Component/NavBar"
+import Tours from "./Component/Tours"
+import InfoTours from "./Component/infoTours"
+import AboutTourism from "./Component/AboutTourism"
+import InfoTopic from "./Component/infoTopic"
+import AboutComp from "./Component/AboutComp"
+import Footer from "./Component/Footer"
 
-function App() {
+const App = ()=>{
+  // const topNav = document.querySelector('.topNav')
+  // console.log(topNav)
+  // window.onscroll = ()=>{
+  //   console.log((window.scrollY)
+  // }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <BrowserRouter>
+          <NavBar />
+          <Routes>
+          <Route path="/" element={<Tours/>} />
+          <Route path="/info tours" element={<InfoTours/>} />
+          <Route path="/موضوعات عن السياحة فى ايطاليا" element={<AboutTourism/>} />
+          <Route path="/info topic" element={<InfoTopic />} />
+          <Route path="/about king italy tours" element={<AboutComp/>} />
+          <Route path="*" element={<NotFound color="info" message="Page Not Found"/>} />
+          </Routes>
+          <Footer />
+          </BrowserRouter>
+      </>
+    )
+  }
 
-export default App;
+  export default App;
+
+
